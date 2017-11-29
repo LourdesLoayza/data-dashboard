@@ -41,28 +41,16 @@
             <option value="sprint-3">SPRINT 3</option>
             <option value="sprint-4">SPRINT 4</option>
         </select> -->
-        <button id="btn-show-data" class="btn">Mostrar indicadores HSE</button>
+        <button id="btn-overview-data" class="btn">Overview data</button>
       </div>
       <div id="indicadores-hse">
-         <span class="titles">Indicadores HSE</span>
+         <span class="titles">Overview</span>
          <div class="sub-container2" id="nps">
             <span class="sub-titles">NET PROMOTOR SCORE</span>
-            <div class="sub-container3">
-               <!-- <span class="titles-data"># Promoters</span>
-               <span class="titles-data"># Promoters</span>
-               <span class="titles-data"># Passive</span>
-               <span class="titles-data"># Passive</span>
-               <span class="titles-data"># Detractors</span>
-               <span class="titles-data"># Detractors</span> -->
-            </div>
+            <div id="charts"></div>
          </div>  
          <div class="sub-container2" id="students-status">
             <span class="sub-titles">STUDENTS STATUS</span>
-            <div class="sub-container3">
-                <!-- <span># Above Average</span>
-                <span># Average</span>
-                <span># Below Average</span> -->
-            </div>
          </div>
          <div class="sub-container2" id="teacher-rating">
           <span class="sub-titles">TEACHER RATING</span>
@@ -84,11 +72,18 @@
             <option value="SCL">SANTIAGO DE CHILE</option>
             <option value="CDMX">CIUDAD DE MEXICO</option>
           </select>
+          <select name="select-prom" id="select-prom">
+            <option value="showProm()">SELECCIONE PROMOCIÓN</option>
+            <option value="20162">2016-2</option>
+            <option value="20171">2017-1</option>
+            <option value="20172">2017-2</option>
+          </select>
+          <button id="btn-students-data" class="btn">Students data</button>
         </div>
 
-        <div id="indicadores-alumnas">
-            <span class="titles">Estudiantes</span>
-            <div class="sub-container2" id="alumnas">
+        <div id="students-indicators">
+            <span class="titles">Students</span>
+            <div class="sub-container2" id="students-details">
                <span class="sub-titles">INFORMACIÓN ESTUDIANTES</span>
             </div>  
          </div>
@@ -99,5 +94,9 @@
     <script src="./js/data.js"></script>
     <!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
   </body>
 </html>
+
