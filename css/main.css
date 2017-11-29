@@ -1,3 +1,143 @@
-/*
- * Estilos de tu proyecto
- */
+/* General styles */
+
+*{
+    font-family: 'Roboto', sans-serif;  
+    margin: 0;
+    padding: 0
+}
+
+/* Header styles */
+
+header{
+    width: 90%;
+    background: #e1e1e1;
+    height: auto;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+figure{
+    padding: 0 1em;
+    display: inline-block;
+    box-sizing: border-box
+}
+
+.header-container{
+    width: 15%;
+    background: #e1e1e1;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 90%;
+    height: auto;
+    margin: auto 1em
+}
+
+.user{
+    width: 20%;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+}
+
+/* Section styles */
+
+.main-container{
+    width: 90%;
+    height: auto;
+    background: #f7f7f7;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.sub-container1{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background: #9e9e9e;
+    margin: 0.5em auto;
+    padding: 1em
+}
+
+.sub-container2{
+    width: 22%;
+    height: 200px;
+    margin: 1em;
+    padding: 1em;
+    background: white;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.sub-container3{
+    width: 30%;
+    height: auto;
+    background: #f7f7f7;
+    margin: 1em;
+    padding: 0.5em;
+    box-sizing: border-box;
+
+}
+
+/* TitleS styles */
+
+.titles{
+    font-size: 1.2em;
+    color: #599ae4;
+    font-weight: 600;
+    display: block;
+    padding: 1em
+}
+
+.sub-titles{
+    font-size: 1em;
+    color: #2b2b2b;
+    font-weight: 600;
+    padding: 1em;
+}
+
+.titles-data{
+    font-size: 1em;
+    color: #599ae4;
+    font-weight: 300;
+    margin: 1em 
+}
+
+
+/* Select styles */
+
+#select-prom{
+    border: none;
+    font-size: 1em;
+    background: #9e9e9e;
+    margin: 1em;
+    color: white
+}
+
+#select-sede{
+    border: none;
+    font-size: 1em;
+    background: #9e9e9e;
+    margin: 1em;
+    color: white
+}
+
+/* Buttom style */
+
+.btn {
+    width: auto;
+    font-size: 1em;
+    padding: 1em;
+    color: #ffc107;
+    background-color: #9e9e9e;
+    border: none;
+    font-weight: 600;
+} 
+
+.btn:hover { 
+    background-color: #ffc107;
+    color: #333447;
+}

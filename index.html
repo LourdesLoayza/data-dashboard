@@ -3,12 +3,101 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
+    <!-- Section made by Flora -->
+    <header>
+       <figure><img class="logo"src="assets/images/logo-laboratoria.svg" alt="Logo_laboratoria"></figure>
+       <figure><img class="user"src="assets/images/user_foto.jpg" alt="Foto_usuario"></figure>
+       <div class="header-container">
+          <span class="sub-titles">Alejandra Ramirez</span>
+          <span class="sub-titles">Training Manager</span>
+       </div>
+       
 
-		<!-- Base de datos -->
-		<script src="./js/data.js"></script>
-		<!-- Aquí va tus archivos JS -->
+    </header>
+    <!-- Section made by Lourdes - Indicadores HSE -->
+    <section class="main-container">
+      <div class="sub-container1">
+        <select name="select-sede" id="select-sede">
+          <option value="">SELECCIONE SEDE</option>
+          <option value="LIM">LIMA</option>
+          <option value="AQP">AREQUIPA</option>
+          <option value="SCL">SANTIAGO DE CHILE</option>
+          <option value="CDMX">CIUDAD DE MEXICO</option>
+        </select>
+        <select name="select-prom" id="select-prom">
+          <option value="showProm()">SELECCIONE PROMOCIÓN</option>
+          <option value="20162">2016-2</option>
+          <option value="20171">2017-1</option>
+          <option value="20172">2017-2</option>
+        </select>
+        <!-- <select name="select-sprint" id="select-sprint">
+            <option value="">TODOS</option>
+            <option value="sprint-1">SPRINT 1</option>
+            <option value="sprint-2">SPRINT 2</option>
+            <option value="sprint-3">SPRINT 3</option>
+            <option value="sprint-4">SPRINT 4</option>
+        </select> -->
+        <button id="btn-show-data" class="btn">Mostrar indicadores HSE</button>
+      </div>
+      <div id="indicadores-hse">
+         <span class="titles">Indicadores HSE</span>
+         <div class="sub-container2" id="nps">
+            <span class="sub-titles">NET PROMOTOR SCORE</span>
+            <div class="sub-container3">
+               <!-- <span class="titles-data"># Promoters</span>
+               <span class="titles-data"># Promoters</span>
+               <span class="titles-data"># Passive</span>
+               <span class="titles-data"># Passive</span>
+               <span class="titles-data"># Detractors</span>
+               <span class="titles-data"># Detractors</span> -->
+            </div>
+         </div>  
+         <div class="sub-container2" id="students-status">
+            <span class="sub-titles">STUDENTS STATUS</span>
+            <div class="sub-container3">
+                <!-- <span># Above Average</span>
+                <span># Average</span>
+                <span># Below Average</span> -->
+            </div>
+         </div>
+         <div class="sub-container2" id="teacher-rating">
+          <span class="sub-titles">TEACHER RATING</span>
+        </div>
+        <div class="sub-container2" id="jedi-master-rating">
+          <span class="sub-titles">JEDI MASTER RATING</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section made by Flora - Indicadores Alumnas -->
+    <section class="main-container">
+        <div class="sub-container1">
+          <select name="select-sede" id="select-sede">
+            <option value="">SELECCIONE SEDE</option>
+            <option value="LIM">LIMA</option>
+            <option value="AQP">AREQUIPA</option>
+            <option value="SCL">SANTIAGO DE CHILE</option>
+            <option value="CDMX">CIUDAD DE MEXICO</option>
+          </select>
+        </div>
+
+        <div id="indicadores-alumnas">
+            <span class="titles">Estudiantes</span>
+            <div class="sub-container2" id="alumnas">
+               <span class="sub-titles">INFORMACIÓN ESTUDIANTES</span>
+            </div>  
+         </div>
+
+    </section>
+
+    <!-- Base de datos -->
+    <script src="./js/data.js"></script>
+    <!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
   </body>
 </html>
