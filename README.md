@@ -1,25 +1,14 @@
 # Data Dashboard
 
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Producto final_
+* **Distribución del trabajo**
+* **Participantes** _Flora Huerta y Lourdes Loayza_
 
 ***
 
-## Flujo de trabajo
+## Distribución del trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+1. El trabajo se dividio en de la siguiente manera: Consultas datos overview, diseño HTML, consulta de datos estudiantes y insercción gráficos.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+2. El archivo index.html es un diseño básico que busca enfocarse en la funcionalidad de las consultas y fue realizada por ambas participantes.
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+3. El archivo app.js se distribuyo de la siguiente forma: funcionalidad consultas overview data, enlace de selects y consulta base de datos fue realizado por Lourdes y la funcionalidad consultas students data, insercción de gráficos fue realizada por Flora
