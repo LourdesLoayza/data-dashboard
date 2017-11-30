@@ -5,6 +5,14 @@
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    2 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<link rel="stylesheet" href="morris.css">
+<script src="morris.min.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- Section made by Flora -->
@@ -15,18 +23,19 @@
           <span class="sub-titles">Alejandra Ramirez</span>
           <span class="sub-titles">Training Manager</span>
        </div>
-       
+
 
     </header>
     <!-- Section made by Lourdes - Indicadores HSE -->
+
     <section class="main-container">
       <div class="sub-container1">
         <select name="select-sede" id="select-sede">
           <option value="">SELECCIONE SEDE</option>
-          <option value="LIM">LIMA</option>
           <option value="AQP">AREQUIPA</option>
-          <option value="SCL">SANTIAGO DE CHILE</option>
           <option value="CDMX">CIUDAD DE MEXICO</option>
+          <option value="LIM">LIMA</option>
+          <option value="SCL">SANTIAGO DE CHILE</option>
         </select>
         <select name="select-prom" id="select-prom">
           <option value="showProm()">SELECCIONE PROMOCIÓN</option>
@@ -43,20 +52,86 @@
         </select> -->
         <button id="btn-overview-data" class="btn">Overview data</button>
       </div>
+
       <div id="indicadores-hse">
          <span class="titles">Overview</span>
+
          <div class="sub-container2" id="nps">
             <span class="sub-titles">NET PROMOTOR SCORE</span>
-            <div id="charts"></div>
-         </div>  
+            <div class="graphic-container">
+              <div class='row'>
+               <div class='col-nd-6' style="height:50px;width:300px">
+                 <h2>Gráfico lineal NPS</h2>
+                 <hr>
+                 <div id="myfirstchart"></div>
+               </div>
+              </div>
+            </div>
+            <div class="graphic-container">
+              <div class='col-nd-6'>
+                  <h2>Grafico circular NPS</h2>
+                  <hr>
+                  <div id="mychart" style="height: 200px;width:300px"></div>
+              </div>
+            </div>
+         </div>
          <div class="sub-container2" id="students-status">
             <span class="sub-titles">STUDENTS STATUS</span>
+            <div class="graphic-container">
+              <div class='row'>
+               <div class='col-nd-6' style="height:50px;width:300px">
+                 <h2>Gráfico lineal Students Status</h2>
+                 <hr>
+                 <div id="myfirstchart"></div>
+               </div>
+              </div>
+            </div>
+            <div class="graphic-container">
+              <div class='col-nd-6'>
+                  <h2>Grafico circular Students Status</h2>
+                  <hr>
+                  <div id="mychart" style="height: 200px;width:300px"></div>
+              </div>
+            </div>
          </div>
          <div class="sub-container2" id="teacher-rating">
           <span class="sub-titles">TEACHER RATING</span>
+          <div class="graphic-container">
+            <div class='row'>
+             <div class='col-nd-6' style="height:50px;width:300px">
+               <h2>Gráfico lineal Teacher Rating</h2>
+               <hr>
+               <div id="myfirstchart"></div>
+             </div>
+            </div>
+          </div>
+          <div class="graphic-container">
+            <div class='col-nd-6'>
+                <h2>Grafico circular Teacher Rating </h2>
+                <hr>
+                <div id="mychart" style="height: 200px;width:300px"></div>
+            </div>
+          </div>
+
         </div>
         <div class="sub-container2" id="jedi-master-rating">
           <span class="sub-titles">JEDI MASTER RATING</span>
+          <div class="graphic-container">
+            <div class='row'>
+             <div class='col-nd-6' style="height:50px;width:300px">
+               <h2>Gráfico lineal Jedi Master Rating</h2>
+               <hr>
+               <div id="myfirstchart"></div>
+             </div>
+            </div>
+          </div>
+          <div class="graphic-container">
+            <div class='col-nd-6'>
+                <h2>Grafico circular Jedi Master Rating</h2>
+                <hr>
+                <div id="mychart" style="height: 200px;width:300px"></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -86,7 +161,7 @@
             <span class="titles">Students</span>
             <div class="sub-container2" id="students-details">
                <span class="sub-titles">INFORMACIÓN ESTUDIANTES</span>
-            </div>  
+            </div>
          </div>
 
     </section>
@@ -100,4 +175,3 @@
     <script type="text/javascript">
   </body>
 </html>
-
